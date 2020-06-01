@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Drinks</title>
+    <style>
+        body {
+            background-image: url(palavra-drink-mdf-15mm-12x30-laser-madeira-D_NQ_NP_697110-MLB31146172256_062019-F.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: 100%;
+        }
+        table{
+            opacity: 0.8;
+        }
+        h1{
+            text-align: center;
+            color: black;
+        }
+        #customers {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #customers td,
+        #customers th {
+            color:black;
+            border: 1px solid #ddd;
+            padding: 8px;
+            font-weight:bolder;
+        }
+
+        #customers tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #customers tr:hover {
+            background-color: #ddd;
+        }
+
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color:sienna;
+            color: white;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: rgb(19, 18, 18);
+        opacity: 0.9;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: rgb(7, 216, 7);
+            text-align: center;
+            padding: 14px 8%;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: rgb(7, 216, 7);
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="homee.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="log form.html">Sign Up</a>
+        <div class="dropdown">
+            <button class="dropbtn">MENU
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="eat.html">EAT</a>
+                <a href="Drinks.html">DRINK</a>
+            </div>
+        </div>
+    </div>
+    <h1>The Drinks</h1>
+    <hr>
+    <table id="customers">
+        <tr>
+            <th>Nickname of Drink</th>
+            <th>Description</th>
+            <th>price</th>
+        </tr>
+        <tr>
+            <td>Coffee</td>
+            <td>Regular coffee</td>
+            <td>2.50 $</td>
+        </tr>
+        <tr>
+            <td>Chocolato</td>
+            <td>Chocolate espresso with milk</td>
+            <td>4.50 $</td>
+        </tr>
+        <tr>
+            <td>Corretto</td>
+            <td>Whiskey and coffee</td>
+            <td>5.00 $</td>
+        </tr>
+        <tr>
+            <td>Iced tea</td>
+            <td>Hot tea, except not hot </td>
+            <td>3.00 $</td>
+        </tr>
+        <tr>
+            <td>Soda</td>
+            <td>Cokacola, Sprite, Fanta, etc</td>
+            <td>2.50 $</td>
+        </tr>
+        <tr>
+            <td>Blueberry Pancakes</td>
+            <td>With syrup, butter and lots of berries</td>
+            <td>8.50 $</td>
+        </tr>
+        <tr>
+            <td>Starbucks Butterbeer Frappuccino</td>
+            <td>three pumps of toffee nut syrup and three pumps of caramel with a Crème Frappuccino base</td>
+            <td>9.75 $</td>
+        </tr>
+        <tr>
+            <td>Dairy Queen Frozen Hot Chocolate</td>
+            <td>Frozen Hot Chocolate and  protein shake recipes</td>
+            <td>9.50 $</td>
+        </tr>
+        <tr>
+            <td>Chick-fil-A Blueberry Cheesecake Milkshake</td>
+            <td>Blueberry Cheesecake Milkshake. This super-sweet drink combines a vanilla milkshake and a full slice of blueberry cheesecake.</td>
+            <td>12.50 $</td>
+        </tr>
+        <tr>
+            <td>Starbucks Zebra Frappuccino</td>
+            <td> This striped Frappuccino is half chocolate, half white chocolate, and comes topped with whipped cream, chocolate drizzle, and chocolate chips</td>
+            <td>13.50 $</td>
+        </tr>
+        <tr>
+            <td>Sonic Cherry Limeade</td>
+            <td>Sonic cleverly holds a daily Happy Hour that features half-priced drinks, and people turn up on schedule for the Cherry Limeade.</td>
+            <td>8.50 $</td>
+        </tr>
+        <tr>
+            <td>Wendy's Frosty</td>
+            <td>The Frosty is considered the signature dessert at Wendy's, available in only two classic flavors: chocolate and vanilla</td>
+            <td>9.50 $</td>
+        </tr>
+        <tr>
+            <td>Starbucks Pumpkin Spice Latte</td>
+            <td>Nothing says fall like a Starbucks Pumpkin Spice Latte</td>
+            <td>12.50 $</td>
+        </tr>
+        <tr>
+            <td>Dunkin' Donuts Coffee</td>
+            <td>the chain made it clear they're all about focusing on their beverages.</td>
+            <td>13.00 $</td>
+        </tr>
+    </table>
+    </div>
+
+</body>
+
+</html>

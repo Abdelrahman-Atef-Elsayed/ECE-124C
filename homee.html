@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HOME</title>
+    <style>
+        h1 {
+            text-align: center;
+            background-color: darkgray;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(depositphotos_119634214-stock-illustration-restaurant-logo-cutlery-design.jpg) ;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: 55%;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: rgb(19, 18, 18);
+            opacity: 0.9;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: rgb(7, 216, 7);
+            text-align: center;
+            padding: 14px 8%;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: rgb(7, 216, 7);
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Slides */
+        .mySlides {
+            display: none;
+
+            padding: 80px;
+            text-align: center;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -30px;
+            padding: 16px;
+            color: #888;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            position: absolute;
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+        }
+
+        /* The dot/bullet/indicator container */
+        .dot-container {
+            text-align: center;
+            padding: 20px;
+            background: #ddd;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        /* Add a background color to the active dot/circle */
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Add an italic font style to all quotes */
+        q {
+            font-style: italic;
+        }
+
+        /* Add a blue color to the author */
+        .author {
+            color: cornflowerblue;
+        }
+
+        .n {
+            background-color: silver;
+            position: absolute;
+            right: 0px;
+            bottom: 10px;
+            width: 25%;
+            height: 75%;
+            border: 3px solid black;
+            padding: 10px;
+            opacity: 0.9;
+        }
+
+        h2 {
+            text-align: center;
+            color: tomato;
+        }
+
+        div.gallery {
+            border: 1px solid #ccc;
+            float: right;
+            width: 180px;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .p {
+            opacity: 0.9;
+            top: 80px;
+            right: 0;
+            width: 15%;
+            height: 60%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="home.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="log form.html">Sign Up</a>
+        <div class="dropdown">
+            <button class="dropbtn">MENU
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="eat.html">EAT</a>
+                <a href="Drinks.html">DRINK</a>
+            </div>
+        </div>
+    </div>
+    <div class="n">
+        <div class="slideshow-container">
+            <h2><u>Comments</u></h2><br><br><br><br>
+            <div class="mySlides">
+                <q>Really a meet clean place with a menu you have to study before you order. The food was delicious and
+                    the service was wonderful. Prices are very reasonable</q>
+                <p class="author">- John Keats</p>
+            </div>
+
+            <div class="mySlides">
+                <q>The food was very good ,The atmosphere was phenomenal. Service was great and I will return</q>
+                <p class="author">- Ernest Hemingway</p>
+            </div>
+
+            <div class="mySlides">
+                <q>Delicious food. Lovely cocktails. I recommend the red sangria with a splash of tequila. Decor is
+                    swanky as hell. Just go</q>
+                <p class="author">- Thomas A. Edison</p>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    <div class="p">
+        <div class="gallery">
+            <a target="_blank" href="images7.jpg">
+                <img src="images7.jpg" alt="Cinque Terre" width="600" height="400">
+            </a>
+            <div class="desc">A chef is an individual who works in the kitchen of a restaurant and is responsible for cooking the food served.
+            </div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="index8.jpg">
+                <img src="index8.jpg" alt="Forest" width="600" height="400">
+            </a>
+            <div class="desc">The interior of the first floor of the restaurant</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="index9.jpg">
+                <img src="index9.jpg" alt="Northern Lights" width="600" height="400">
+            </a>
+            <div class="desc">The interior of the second floor of the restaurant</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="index10.jpg">
+                <img src="index10.jpg" alt="Mountains" width="600" height="400">
+            </a>
+            <div class="desc">The interior of the floor of the Cofe</div>
+        </div>
+    </div>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+    </script>
+
+</body>
+
+</html>

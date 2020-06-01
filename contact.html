@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact US</title>
+    <style>
+        body {
+            background-color: beige;
+        }
+
+        .v {
+            position: absolute;
+            right: 10px;
+            width: 30%;
+            border: 5px solid black;
+            padding: 10px;
+        }
+
+        a {
+            color: brown;
+        }
+
+        .s {
+            color: darkgreen;
+        }
+
+        h1 {
+            color: darkred;
+            background-color: tan;
+        }
+
+        h2 {
+            color: darkmagenta;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: rgb(19, 18, 18);
+        opacity: 0.9;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: rgb(7, 216, 7);
+            text-align: center;
+            padding: 14px 8%;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: rgb(7, 216, 7);
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="homee.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="contact us.html">CONTACT</a>
+        <a href="log form.html">Sign Up</a>
+        <div class="dropdown">
+            <button class="dropbtn">MENU
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="eat.html">EAT</a>
+                <a href="Drinks.html">DRINK</a>
+            </div>
+        </div>
+    </div>
+
+
+    <h1><b>-CONTACT US-</b></h1>
+    <div class="v">
+        <h2>Our restaurant is located right in the heart of the city of London.</h2>
+        <hr>
+        <h2><b>Connect with us:</b></h2>
+        <h3>
+            <pre>
+    Lower Grosvenor Place
+    Westminster
+    London SW1W 0EJ</pre>
+        </h3>
+        <div>
+            <div class="s">
+                <pre><b>
+    +44 20 7834 0722
+
+    +44 7464 629 719
+    <h2><b>E-Mail:</b></h2><b>    <a href="info@restaurant.com">info@restaurant.com</a></b>
+                </pre>
+
+            </div>
+
+        </div>
+    </div>
+    <div id="googleMap" style="width:100%; "></div>
+
+
+    <script>
+        function myMap() {
+            var mapProp = {
+                center: new google.maps.LatLng(51.508742, -0.120850),
+                zoom: 5,
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        }
+    </script>
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9935.295163665698!2d-0.14438!3d51.498101!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe299c95596f7e6ed!2sDammikas!5e0!3m2!1sen!2sus!4v1590838891044!5m2!1sen!2sus"
+        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
+
+</body>
+
+</html>

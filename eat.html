@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Eat</title>
+    <style>
+        body {
+            background-image: url(gracejohnson-logos-EAT.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: 100%;
+        }
+        table{
+            opacity: 0.8;
+        }
+        h1{
+            text-align: center;
+            color: black;
+        }
+        #customers {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #customers td,
+        #customers th {
+            color:black;
+            border: 1px solid #ddd;
+            padding: 8px;
+            font-weight:bolder;
+        }
+
+        #customers tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #customers tr:hover {
+            background-color: #ddd;
+        }
+
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color:green;
+            color: white;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: rgb(19, 18, 18);
+        opacity: 0.9;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: rgb(7, 216, 7);
+            text-align: center;
+            padding: 14px 8%;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: rgb(7, 216, 7);
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="homee.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="log form.html">Sign Up</a>
+        <div class="dropdown">
+            <button class="dropbtn">MENU
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="eat.html">EAT</a>
+                <a href="Drinks.html">DRINK</a>
+            </div>
+        </div>
+    </div>
+    <h1>FOOD</h1>
+    <hr>
+    <table id="customers">
+        <tr>
+            <th>Nickname of Food</th>
+            <th>Description</th>
+            <th>price</th>
+        </tr>
+        <tr>
+            <td>Bread Basket</td>
+            <td>Assortment of fresh baked fruit breads and muffins</td>
+            <td>5.50 $</td>
+        </tr>
+        <tr>
+            <td>Honey Almond Granola with Fruits</td>
+            <td>Natural cereal of honey toasted oats, raisins, almonds and dates</td>
+            <td>7.00 $</td>
+        </tr>
+        <tr>
+            <td>Belgian Waffle</td>
+            <td>Vanilla flavored batter with malted flour</td>
+            <td>7.50 $</td>
+        </tr>
+        <tr>
+            <td>Scrambled eggs</td>
+            <td>Scrambled eggs, roasted red pepper and garlic, with green onions</td>
+            <td>8.00 $</td>
+        </tr>
+        <tr>
+            <td>Blueberry Pancakes</td>
+            <td>With syrup, butter and lots of berries</td>
+            <td>8.50 $</td>
+        </tr>
+        <tr>
+            <td>KFC Original Recipe Chicken</td>
+            <td>KFC's Original Recipe Chicken is famous for its secret 11 herbs and spices, and also for launching the brand into fast food superstardom.</td>
+            <td>16.50 $</td>
+        </tr>
+        <tr>
+            <td>Arby's Roast Beef Sandwich</td>
+            <td>Featuring only two ingredients, roast beef and a sesame seed bun, Arby's claims that this is the sandwich that put roast beef on the map</td>
+            <td>9.50 $</td>
+        </tr>
+        <tr>
+            <td>Taco Bell Burrito Supreme</td>
+            <td>Taco Bell has crowned this burrito "The Supreme Ruler of the Burrito Empire", and it has many loyal subjects to prove it</td>
+            <td>10.50 $</td>
+        </tr>
+        <tr>
+            <td>Chick-fil-A Chicken Sandwich</td>
+            <td>Chick-fil-A may be politically polarizing, but people tend to have a unified stance on their original Chicken Sandwich: "delicious."</td>
+            <td>14.50 $</td>
+        </tr>
+        <tr>
+            <td>Taco Bell Chalupa Supreme</td>
+            <td>Before Taco Bell, many Americans had never heard of chalupas. Thanks for that, Taco Bell.</td>
+            <td>10.50 $</td>
+        </tr>
+        <tr>
+            <td>Checkers Seasoned Fries</td>
+            <td> a good portion of the crowd is in it for the fries. But in Checkers' very own words, this is the menu item that "put Checkers on the map"</td>
+            <td>16.00 $</td>
+        </tr>
+        <tr>
+            <td>Whataburger Original Whataburger</td>
+            <td>Whataburger is ranked as the twenty-second most popular fast food chain in America, but if you're in the South or Midwest</td>
+            <td>12.50 $</td>
+        </tr>
+        <tr>
+            <td>KFC Popcorn Chicken Nuggets</td>
+            <td>If you take one of the most popular fast-food recipes and make it conveniently bite-sized, ta-da! You have another hit on your hands.</td>
+            <td>10.50 $</td>
+        </tr>
+        <tr>
+            <td>Five Guy's Fries</td>
+            <td>Five Guys is known for being "picky" about their fries, only using Idaho potatoes, which are known for being particularly dense.</td>
+            <td>7.50 $</td>
+        </tr>
+    </table>
+    </div>
+
+</body>
+
+</html>
